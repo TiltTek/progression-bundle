@@ -1,6 +1,6 @@
 {
     "name": "tilttek/progression-bundle",
-    "description": "Levels and streaks for Symfony on tilttek/progression: tracks, curves, seasons, milestones and streaks in configuration, stored in Doctrine DBAL, the projection fed by tilttek/activity-bundle, events on levels, milestones and broken streaks, Twig progress bar and streak, commands, and member export and erasure",
+    "description": "tilttek/progression in Symfony: levels, seasons and streaks in configuration, fed by activity, shown as Twig progress bars, with member export and erasure.",
     "license": "MIT",
     "type": "symfony-bundle",
     "keywords": [
@@ -21,7 +21,7 @@
     "homepage": "https://ph-il.ca",
     "require": {
         "php": ">=8.5",
-        "doctrine/dbal": "^4.5",
+        "doctrine/dbal": "^4.6",
         "phil/resource": "^0.1@dev",
         "psr/event-dispatcher": "^1.0",
         "symfony/config": "^8.2",
@@ -29,8 +29,8 @@
         "tilttek/progression": "^0.2@dev"
     },
     "require-dev": {
-        "doctrine/doctrine-bundle": "^3.3",
-        "doctrine/orm": "^3.7",
+        "doctrine/doctrine-bundle": "^3.4",
+        "doctrine/orm": "^3.8",
         "phpunit/phpunit": "^13.4",
         "psr/clock": "^1.0",
         "symfony/clock": "^8.2",
@@ -42,8 +42,8 @@
         "symfony/twig-bundle": "^8.2",
         "symfony/yaml": "^8.2",
         "tilttek/activity": "^0.1@dev",
-        "tilttek/activity-bundle": "^0.1@dev || ^0.2@dev",
-        "twig/twig": "^3.21"
+        "tilttek/activity-bundle": "^0.2@dev",
+        "twig/twig": "^3.31"
     },
     "suggest": {
         "doctrine/orm": "To add the progression's tables to the schema the ORM generates, and so to the migrations",
